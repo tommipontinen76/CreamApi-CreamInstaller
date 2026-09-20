@@ -6,7 +6,7 @@
 #define MyAppVersion "5.1.0.0"
 #define MyAppPublisher "Tommi Pöntinen"
 #define MyAppURL "https://github.com/tommipontinen76/CreamApi-CreamInstaller"
-#define MyAppExeName "MyProg-x64.exe"
+#define MyAppExeName "CreamInstaller.exe"
 #define DoubleAmp(Value) StringChange(Value, "&", "&&")
 #define EscapeConstArgument(Value) StringChange(StringChange(StringChange(Value, "%", "%25"), ",", "%2c"), "}", "%7d")
 
@@ -46,7 +46,6 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Program Files\Inno Setup 7\Examples\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Users\tommi\Downloads\CreamInstaller.exe"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files.
 
